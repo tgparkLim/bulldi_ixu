@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/generic_battery"
+    >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="446px"
+        android:paddingBottom="70px"
+        >
+        <TableRow>
+            <TextView
+                android:id="@+id/battery_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="225px"
+                />
+            <TextView
+                android:id="@+id/battery_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="%"
+                android:textSize="183px"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/battery_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="good battery"
+        android:textSize="108px"
+        android:paddingBottom="20px"/>
+    <ImageView
+        android:id="@+id/battery_image"
+        android:layout_width="360px"
+        android:layout_height="136px"
+        android:layout_gravity="center"
+        android:src="@drawable/battery"
+        />
+
+</LinearLayout>

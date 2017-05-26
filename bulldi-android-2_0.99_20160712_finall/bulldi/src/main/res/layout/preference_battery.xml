@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp">
+    <LinearLayout
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp">
+        <RelativeLayout
+            android:id="@+id/battery_change"
+            android:layout_width="45dp"
+            android:layout_height="65dp"
+            android:background="@drawable/battery"
+            android:gravity="center">
+            <openstack.util.TextViewPlus
+                android:id="@+id/batery_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                foo:customFont="Roboto-Regular.ttf"
+                android:textSize="16dp"
+                android:textColor="@color/Black"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <openstack.util.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/battery_preference"
+        foo:customFont="Roboto-Regular.ttf"
+        android:textSize="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+        <openstack.util.TextViewPlus
+            android:id="@+id/battery_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="13.5dp"
+            android:layout_marginRight="23.33dp"
+            android:text="It is full battery"
+            foo:customFont="Roboto-Regular.ttf"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\park\\Desktop\\android\\bulldi-android-2_0.99_20160712_finall\\facebook\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-it\\values-it.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 60,
+                    "endOffset": 111
+                },
+                "from": {
+                    "file": "C:\\Users\\park\\Desktop\\android\\bulldi-android-2_0.99_20160712_finall\\facebook\\res\\values-it\\messenger_button_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 2,
+                        "startOffset": 1122,
+                        "endColumn": 58,
+                        "endOffset": 1178
+                    }
+                }
+            }
+        ]
+    }
+]

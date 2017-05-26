@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "855672641283",
+    "firebase_url": "https://bulldipush.firebaseio.com",
+    "project_id": "bulldipush",
+    "storage_bucket": "bulldipush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855672641283:android:8de4d1124f657e4f",
+        "android_client_info": {
+          "package_name": "openstack.bulldi.safe3x"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855672641283-1fvnti9aoesd8laa7ue3d8uqig5v5gi0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmDloqSEC-moNk6udKIp3RS5tnQfFoP0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

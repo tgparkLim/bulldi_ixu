@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <openstack.util.CheckBoxImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/but_add_contact"
+        android:layout_width="52.5dp"
+        android:layout_height="32.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        app:checked_img="@drawable/but_add_on"
+        app:default_img="@drawable/but_add_off"/>
+
+</LinearLayout>

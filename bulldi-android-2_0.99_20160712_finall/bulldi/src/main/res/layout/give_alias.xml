@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <openstack.util.TextViewPlus
+        android:id="@+id/bulldi_alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alias_intro"
+        android:textSize="21dp"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        foo:customFont="Roboto-Regular.ttf"/>
+    <openstack.util.EditTextPlus
+        android:id="@+id/text_alias"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:editable="true"
+        android:textSize="21dp"
+        android:hint="@string/alias_hint"
+        foo:customFont="Roboto-Regular.ttf"/>
+    <Button
+        android:id="@+id/but_alias"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/button_setAlias"
+        android:textSize="21dp"
+        android:background="@drawable/button_off"
+        android:textColor="@color/White"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+</LinearLayout>

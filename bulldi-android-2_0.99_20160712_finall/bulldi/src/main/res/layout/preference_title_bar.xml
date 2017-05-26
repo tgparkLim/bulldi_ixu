@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="130dp"
+    android:background="@color/DarkTurquoise"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/settting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn_back"
+            android:paddingLeft="11.25dp" />
+        <openstack.util.TextViewPlus
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_title"
+            foo:customFont="Roboto-Regular.ttf"
+            android:textSize="21dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|right">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <openstack.util.TextViewPlus
+            android:id="@+id/battery_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It is full battery"
+            foo:customFont="Roboto-Regular.ttf"
+            android:textSize="15dp"
+            android:gravity="right"
+            android:paddingBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="fill_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:id="@+id/battery_change"
+                android:layout_width="91.67dp"
+                android:layout_height="57dp"
+                android:background="@drawable/battery"
+                android:gravity="center">
+            <openstack.util.TextViewPlus
+                android:id="@+id/batery_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                foo:customFont="Roboto-Regular.ttf"
+                android:textSize="22dp"
+                android:textColor="@color/Black"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

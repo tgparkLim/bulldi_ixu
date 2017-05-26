@@ -1,0 +1,109 @@
+body{
+	font-family: arial, sans-serif;
+	text-align: center;
+}
+*{
+	padding : 0px;
+	margin : 0px;
+}
+#icon{
+	background: url("http://13.124.11.28/bulldi/images/logo.png");
+	width: 120px;
+	height: 75px;
+	margin-top: 20px;
+}
+#div1{
+	width: 100%;
+	height: 650px;
+	background: white;
+}
+#div2{
+	background: #00ff4e;
+	width: 100%;
+	height: 100px;
+	line-height: : 100px;
+	opacity: 0.7;
+	filter: alpha(opacity = 70);
+}
+#div2 h1{
+	float: left;
+	font-weight: 400;
+	color: yellow;
+	cursor: pointer;
+	margin-left: 10px;
+}
+#div2 ul{
+	float: right;
+	position: relative;
+	margin-right: 60px;
+	line-height: 55px;
+
+}
+#div2 ul li{
+	list-style-type: none;
+	display: inline-block;
+	/*margin-top: 20px;  /* add */
+}
+#div2 ul li a{
+	padding: 22px;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+#div2 ul li:hover{
+	background: #29B59F;
+	transition: all 0.40s
+}
+#div2 ul li:hover ul{
+	display: block;
+}
+#div2 ul ul{
+	display: none;
+	width: 120px;
+	position: absolute;
+}
+#div2 ul li li{
+	background: #29B59F;
+	display: block;
+}
+#div2 ul li li a{
+	padding: 20px;
+
+}
+#div2 ul li li:hover{
+	background: #11a18a;
+	transition: all 0.40s;
+}
+
+/*Extra point*/
+#div3{
+	text-align: center;
+	margin-top: 130px;
+	width: 330px;
+	height: 220px;
+	background: #197a7f;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 50px;
+	border-radius: 5px;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+#div3 h1{
+	color: white;
+	font-weight: 400;
+}
+#div3 p{
+	color: white;
+}
+.active{
+	background: #29b59f;
+}
+.active1{
+	background: #11a18a;
+}
+/*#nav_wrapper{
+	margin:0 auto;
+	width: 100%;
+	text-align: center;
+}*/

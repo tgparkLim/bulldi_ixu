@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="openstack.bulldi.safe3x"
+    android:versionCode="26"
+    android:versionName="0.99">
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> -->
+
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE"/>
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:name=".Login.GlobalApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/icon_96"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <service
+            android:name="openstack.bulldi.common.BluetoothLeService"
+            android:enabled="true" />
+        <service
+            android:name="org.eclipse.paho.android.service.MqttService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Introduction.Introduction"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/My.Holo.Light.FullScreen" />
+        <activity
+            android:name=".Login.Greeting"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Login.Bulldi_rule"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/My.Holo.Light.FullScreen" />
+        <activity
+            android:name=".Login.Bulldi_rule1"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Login.Bulldi_rule2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Login.Bulldi_rule3"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Login.KakaoSignupActivity"
+            android:configChanges="screenSize|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".Login.KakaoLoginActivity"
+            android:configChanges="screenSize|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".Login.BaseActivity"
+            android:configChanges="screenSize|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".BLE_Connection.Connection"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name=".BLE_Connection.Connection_seperate"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <service
+            android:name=".BLE_Connection.Autoconnect_service"
+            android:enabled="true" />
+        <service
+            android:name=".BLE_Connection.Autoconnect_service_seperate"
+            android:enabled="true" />
+        <service
+            android:name=".Device_View.StartAlarmService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Preference_sharing.Notify_friend_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Login.Notify_friend_openAPI"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Preference_sharing.Notify_friend_alphabet"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Preference_sharing.Message_content_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_lighting.Lighting_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_customer_idea.Customer_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_history.History_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Test_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_test.Operation_test_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_etc.ETC_preference"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_etc.Language_setting"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_etc.Unit_setting"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_etc.Legal_information"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/LegalTheme" />
+        <activity
+            android:name=".Preference_etc.Version"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_etc.Session_out"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Preference_etc.Alias"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Preference_Message_Theme" />
+        <activity
+            android:name=".Device_View.DeviceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName=".BLE_Connection.Connection"
+            android:screenOrientation="portrait"
+            android:theme="@style/DeviceactivityTheme" />
+        <activity
+            android:name=".PreferencesActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName=".Device_View.DeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceTheme" />
+        <activity
+            android:name=".Alarm.DialogAlarm"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".Preference_test.DialogAlarmTest"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.awareness.API_KEY"
+            android:value="AIzaSyAJdLhyClDOANBVJqWOZUGkjgkQo35Smh4" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDJSIEfL-NvbEfQt5pzIQw4YFUd8gArVCI" />
+
+        <service android:name=".Device_View.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Device_View.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--<service-->
+            <!--android:name=".Device_View.MyServiceData"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true"></service>-->
+
+
+
+    </application>
+
+</manifest>

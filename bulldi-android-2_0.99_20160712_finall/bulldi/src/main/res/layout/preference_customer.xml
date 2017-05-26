@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="59.33dp">
+    <ImageView
+        android:layout_width="33.67dp"
+        android:layout_height="28.67dp"
+        android:src="@drawable/icn_servicecenter"
+        android:layout_gravity="center"
+        android:layout_marginRight="16.67dp"/>
+    <openstack.util.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/setting_custumer_idea"
+        foo:customFont="Roboto-Regular.ttf"
+        android:textSize="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+        <ImageView
+            android:id="@+id/service"
+            android:layout_width="14.33dp"
+            android:layout_height="20.67dp"
+            android:src="@drawable/arrow_list"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6.67dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

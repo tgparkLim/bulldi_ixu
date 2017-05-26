@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextPlus">
+        <attr name="customFont_Edittext" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CheckBoxImageView">
+        <attr name="default_img" format="integer"/>
+        <attr name="checked_img" format="integer"/>
+        <attr name="checked" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="KakaoDialogSpinner">
+        <attr name="kakao_prompt" format="string"/>
+        <attr name="kakao_entries" format="reference"/>
+        <attr name="kakao_icon" format="reference"/>
+        <attr name="kakao_dialogTitle" format="reference"/>
+        <attr name="kakao_showTitleDivider" format="boolean"/>
+        <attr name="kakao_titleTextColor" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:gravity="center"
+    android:background="@color/White">
+    <openstack.util.TextViewPlus
+        android:id="@+id/light_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lighting_item_1"
+        android:textStyle="bold"
+        foo:customFont="Roboto-Regular.ttf"
+        android:textSize="18dp"
+        android:layout_marginLeft="13.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center">
+        <openstack.util.CheckBoxImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/switch_light"
+            android:layout_width="76.67dp"
+            android:layout_height="38.67dp"
+            android:clickable="true"
+            app:checked_img="@drawable/but_lighting_on"
+            app:default_img="@drawable/but_lighting_off"
+            android:layout_gravity="center"
+            android:layout_marginRight="11.25dp"/>
+    </LinearLayout>
+
+</LinearLayout>

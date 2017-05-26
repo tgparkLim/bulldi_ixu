@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/White">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    </LinearLayout>
+    <!--    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/img_Gifbackground"
+            />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/viewGif_test"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25dp">
+    </LinearLayout>
+    <!--    <ImageView
+            android:layout_width="164.5dp"
+            android:layout_height="164.5dp"
+            android:src="@drawable/fire_06"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"/>-->
+    <openstack.util.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notice_alarm_demo"
+        android:textSize="15.75dp"
+        android:textColor="@color/Black"
+        foo:customFont="Roboto-Regular.ttf"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="50dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+<!--        <ImageView
+            android:id="@+id/dial_phone_test"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fire_keypad_off"/>-->
+        <ImageView
+            android:id="@+id/stop_alarm_test"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fire_stop_off" />
+
+
+    </LinearLayout>
+    <!--    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/dial_phone"
+                android:layout_width="50.75dp"
+                android:layout_height="50.75dp"
+                android:src="@drawable/but_dpad_off"/>
+            <detection.bulldi.safe3x.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dial phone number"
+                android:textSize="15.75dp"
+                foo:customFont="Roboto-Regular.ttf"/>
+        </LinearLayout>-->
+
+</LinearLayout>

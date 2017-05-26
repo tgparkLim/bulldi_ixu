@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preference_control"
+    android:layout_width="fill_parent"
+    android:key="preference_screen"
+    android:icon="@null"
+    >
+    <openstack.bulldi.safe3x.Preference_sharing.Custom_preference_blank
+        android:key="pref_blank"
+        android:layout="@layout/blank">
+    </openstack.bulldi.safe3x.Preference_sharing.Custom_preference_blank>
+    <openstack.bulldi.safe3x.Preference_sharing.Custom_preference_Notify
+        android:key="pref_notify"
+        android:layout="@layout/preference_notify"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_sharing.Notify_friend_preference" />
+    </openstack.bulldi.safe3x.Preference_sharing.Custom_preference_Notify>
+<!--    <openstack.bulldi.safe3x.Preference_sharing.Custom_preference_Notify
+        android:key="pref_notify"
+        android:layout="@layout/preference_notify"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_sharing.Notify_friend_alphabet" />
+    </openstack.bulldi.safe3x.Preference_sharing.Custom_preference_Notify>-->
+    <openstack.bulldi.safe3x.Preference_sharing.Custom_preference_VoiceMessage
+        android:key="pref_message"
+        android:layout="@layout/preference_message"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_sharing.Message_content_preference" />
+    </openstack.bulldi.safe3x.Preference_sharing.Custom_preference_VoiceMessage>
+    <openstack.bulldi.safe3x.Preference_lighting.Custom_preference_Lighting
+        android:key="pref_lighting"
+        android:layout="@layout/preference_lighting"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_lighting.Lighting_preference" />
+    </openstack.bulldi.safe3x.Preference_lighting.Custom_preference_Lighting>
+    <PreferenceScreen
+        android:key="pref_customer"
+        android:layout="@layout/preference_customer"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_customer_idea.Customer_preference" />
+    </PreferenceScreen>
+    <openstack.bulldi.safe3x.Preference_history.Custom_preference_Warning
+        android:key="pref_warning"
+        android:layout="@layout/preference_warning"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_history.History_preference" />
+    </openstack.bulldi.safe3x.Preference_history.Custom_preference_Warning>
+    <PreferenceScreen
+        android:key="pref_test"
+        android:layout="@layout/preference_test"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_test.Operation_test_preference" />
+    </PreferenceScreen>
+    <PreferenceScreen android:key="pref_website"
+        android:layout="@layout/preference_website"
+        android:defaultValue="false"
+        android:icon="@null">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.bulldi.com"
+            />
+    </PreferenceScreen>
+    <PreferenceScreen android:key="pref_etc"
+        android:layout="@layout/preference_etc"
+        android:defaultValue="false"
+        android:icon="@null">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="openstack.bulldi.safe3x"
+            android:targetClass="openstack.bulldi.safe3x.Preference_etc.ETC_preference" />
+    </PreferenceScreen>
+    <openstack.bulldi.safe3x.Preference_battery.Custom_preference_Battery
+        android:key="pref_battery"
+        android:layout="@layout/preference_battery">
+    </openstack.bulldi.safe3x.Preference_battery.Custom_preference_Battery>
+</PreferenceScreen>

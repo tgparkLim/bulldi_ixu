@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\park\\Desktop\\android\\bulldi-android-2_0.99_20160712_finall\\network\\build\\intermediates\\res\\merged\\release\\layout\\kakao_login_layout.xml",
+        "source": "C:\\Users\\park\\Desktop\\android\\bulldi-android-2_0.99_20160712_finall\\network\\build\\intermediates\\exploded-aar\\bulldi-android-2_0.99_20160712_finall\\util\\1.1.10\\release\\res\\layout\\kakao_login_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\park\\Desktop\\android\\bulldi-android-2_0.99_20160712_finall\\network\\build\\intermediates\\res\\merged\\release\\layout\\kakao_internal_login_activity.xml",
+        "source": "C:\\Users\\park\\Desktop\\android\\bulldi-android-2_0.99_20160712_finall\\network\\build\\intermediates\\exploded-aar\\bulldi-android-2_0.99_20160712_finall\\util\\1.1.10\\release\\res\\layout\\kakao_internal_login_activity.xml"
+    }
+]

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_swipe_swipe"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/trash_history"
+            android:src="@drawable/trash"
+            android:layout_width="match_parent"
+            android:background="#FF3B30"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="7.5dp"
+    android:paddingTop="7.5dp"
+    >
+    <ImageView
+        android:id="@+id/history_img_1"
+        android:layout_width="25.25dp"
+        android:layout_height="23.5dp"
+        android:src="@drawable/icn_cogas"
+        android:layout_gravity="center"
+        android:layout_marginRight="11.25dp"
+        android:layout_marginLeft="11.25dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <openstack.util.TextViewPlus
+            android:id="@+id/history_txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO Emergency"
+            android:textSize="15dp"
+            foo:customFont="Roboto-Regular.ttf"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+        <openstack.util.TextViewPlus
+            android:id="@+id/history_txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="256ppm"
+            android:textSize="11.25dp"
+            foo:customFont="Roboto-Regular.ttf"
+            android:textColor="@color/Black"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="11.25dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <openstack.util.TextViewPlus
+                android:id="@+id/history_txt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/Black"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:text="Sun.26.10.15"
+                foo:customFont="Roboto-Regular.ttf"/>
+            <openstack.util.TextViewPlus
+                android:id="@+id/history_txt_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/Black"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:text="11:41 PM"
+                foo:customFont="Roboto-Regular.ttf"/>
+        </LinearLayout>
+    </FrameLayout>
+<!--    <CheckBox
+        android:id="@+id/history_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+</LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

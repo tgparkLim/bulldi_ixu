@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/White">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/White">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icn_search"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <openstack.util.EditTextPlus
+            android:id="@+id/searchContact_api"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:editable="true"
+            android:textSize="17dp"
+            foo:customFont="Roboto-Regular.ttf"
+            android:hint="@string/notify_friend_search"
+            android:background="#00000000"/>
+        <ImageView
+            android:id="@+id/delete_search_api"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/but_trash3"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/list_contact_api"
+        android:fastScrollEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:layout_weight="1"/>
+
+</LinearLayout>

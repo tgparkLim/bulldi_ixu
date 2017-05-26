@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main activity -->
+    <string name="app_name">bulldi</string>
+    <string name="connect">Connect</string>
+    <string name="title_device_list">Device List</string>
+    <string name="device">Device</string>
+    <string name="header">Available BLE Devices</string>
+    <string name="disconnected">Device is not connected</string>
+    <string name="control">Done</string>
+    <string name="bt_not_supported">Bluetooth is not supported</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="bt_on">블루투스가 켜졌습니다</string>
+    <string name="bt_not_on">블루투스가 꺼져있습니다</string>
+    <string name="app_closing">bulldi 앱을 종료합니다</string>
+    <string-array name="device_filter"><item>SensorTag</item><item>SensorTag2</item><item>Bulldi</item><item>bulldi</item><item>CC2650 SensorTag</item></string-array>
+    <string name="nodevice">There are no SensorTags advertising within range. Please push the side button on the SensorTag to start advertising.</string>
+    <string name="scan_advice">The Android device is not scanning. Please tap \'Scan\' to scan for SensorTags.</string>
+    <string name="bt_adapter_disable">Disable Bluetooth adapter</string>
+    <string name="bt_adapter_reset">Reset Bluetooth adapter</string>
+
+    <!-- Options menu -->
+    <string name="prefs">Preferences</string>
+    <string name="progress"></string>
+    <string name="agree">I agree</string>
+    <string name="fwupdate">Firmware update</string>
+    <string name="bt">Bluetooth Adapter</string>
+    <string name="sthome">SensorTag Home</string>
+    <string name="tie2e">TI E2E Community</string>
+    <string name="license">License</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+
+    <!-- Device activity -->
+    <string name="dev_addr">Device address</string>
+    <string name="image">Image</string>
+
+    <!-- Sensor names-->
+    <string name="keys">Keys</string>
+    <string name="acc">Accelerometer</string>
+    <string name="mag">Magnetometer</string>
+    <string name="lux">Luxometer</string>
+    <string name="gyro">Gyroscope</string>
+    <string name="hum">Humidity</string>
+    <string name="bar">Barometer</string>
+    <string name="tAmb">Ambience Temperature</string>
+    <string name="tObj">Object Temperature</string>
+
+    <!-- Sensor misc. -->
+    <string name="xyz3">x:\ny:\nz:\n</string>
+    <string name="empty3">*\n*\n*\n</string>
+    <string name="unitDegSec3">deg/s\ndeg/s\ndeg/s\n</string>
+    <string name="unitG3">g\ng\ng\n</string>
+    <string name="unitT3">uT\nuT\nuT\n</string>
+
+    <string name="empty1">*\n</string>
+    <string name="unitDeg">deg/C\n</string>
+    <string name="unitRH">%rH\n</string>
+    <string name="unitPA_Meter">nPA\nmeter</string>
+    <string name="unitLux">Lux\n</string>
+    <string name="unitTemp">C</string>
+    <string name="unitSymbolTemp">&#xb0;</string>
+
+    <!-- FWUpdate activity -->
+    <string name="title_oad">Firmware Update (OAD)</string>
+    <string name="start_prog">Start Programming</string>
+    <string name="cancel">Cancel</string>
+    <string name="prog_ogoing">NB! Not permitted to close this view during OAD transfer</string>
+    <string name="load_image_a">Image A</string>
+    <string name="load_image_b">Image B</string>
+    <string name="load_image_c">Custom</string>
+    <string name="no_image">Not an OAD image</string>
+    <string name="no_image_sel">No image selected</string>
+    <string name="new_image">Update image:</string>
+    <string name="cur_image">Device image:</string>
+    <string name="idle">idle</string>
+    <string name="btn_txt_confirm">Confirm</string>
+    <string name="discovering_services">Discovering Services</string>
+    <string name="oad_dialog_old_fw_0_89_cc26xx">Firmware version 0.89 detected, to upgrade to latest firmware we will need to upgrade in two stages, first stage to v0.91 and second stage to v1.01</string>
+    <string name="oad_dialog_programming_finished">Firmware upgrade finished, the device should now disconnect, this will be evident by the device restarting and LED start blinking again. \r\n\r\nIf this should not happen, upgrade failed, you should try to upgrade again.</string>
+
+    <!-- Progress alertview -->
+    <string name="progress_title">Discovering Services</string>
+    <string name="progress_info">Discovered x of x services</string>
+    <string name="oad_dialog_title">OAD Programming</string>
+    <string name="oad_dialog_progress">0.0%</string>
+    <string name="oad_file_select_button">Browse</string>
+    <string name="cloud_config_dialog_title">Cloud Configuration</string>
+    <string name="cloud_config_dialog_cloud_service">Cloud service :</string>
+    <string name="cloud_config_dialog_username">Username :</string>
+    <string name="cloud_config_dialog_password">Password :</string>
+    <string name="cloud_config_dialog_device_id">Device id:</string>
+    <string name="cloud_config_dialog_cloud_broker_address">Broker Address :</string>
+    <string name="cloud_config_dialog_broker_port">Broker Port :</string>
+    <string name="cloud_config_dialog_publish_topic">Publish Topic :</string>
+    <string name="cloud_config_dialog_clean_session_checkbox_title">Clean session</string>
+    <string name="cloud_config_dialog_use_ssl_checkbox_title">Use SSL</string>
+    <string name="cloud_config_dialog_save_button_text">Save settings</string>
+
+    <!-- Phone -->
+    <string name="defaultnumber">01065901333</string>
+    <string name="smsinputtext">Fire, come please</string>
+    <string-array name="cloud_config_dialog_cloud_services_array">
+        <item>IBM IoT Quick Start</item>
+        <item>IBM IoT Foundation</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string name="test_start">Test start</string>
+    <!--<string name="facebook_app_id">796032750509054</string>-->
+    <string name="facebook_app_id">956245164411786</string>
+    <string name="kakao_app_key">3a030f3e3dc151f0cb025a20ee30aa16</string>
+    <!--string name="kakao_app_key">f322a8c98ec67043cb925c04d12d85ae</string>-->
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string-array name="usermgmg_gender_types">
+        <item>@string/female</item>
+        <item>@string/male</item>
+    </string-array>
+    <!-- Button -->
+    <string name="button_start">시작</string>
+    <string name="button_stop">멈춤</string>
+    <string name="button_scan">검색</string>
+    <string name="button_rescan">재검색</string>
+    <string name="button_submit">확인</string>
+    <string name="button_close">닫기</string>
+    <string name="button_out">탈퇴하시겠습니까?</string>
+    <string name="button_signup">가입하기</string>
+    <string name="button_upgrade">업그레이드</string>
+    <string name="button_update">업데이트</string>
+    <string name="button_5sec">5 초</string>
+    <string name="button_sessionOut">탈퇴하기</string>
+    <string name="button_setAlias">이름변경</string>
+    <!-- Toast -->
+    <string name="toast_contact_notify">화재시 등록된 친구들에게 자동으로 알려드립니다</string>
+    <string name="toast_no_contact">등록된 연락처가 없습니다!!!</string>
+    <string name="toast_sent_email">이메일이 전송되었습니다</string>
+    <string name="toast_sent_error">이메일 전송오류입니다.네트웍 연결이 불안정합니다!</string>
+    <string name="toast_login_other_fillText">모든 입력란를 채워주세요</string>
+    <string name="toast_login_other_wrongpass">패스워드를 다시 입력해주세요</string>
+    <string name="toast_internet_checking">네트웍 연결이 불안정합니다!</string>
+    <string name="toast_operation_test">동작 테스트는 진행됩니다</string>
+    <string name="toast_change_software">최신버젼이 있습니다. 업데이트를 진행해주세요.</string>
+    <!-- Alarm -->
+    <string name="notice_alarm">버튼을 3초간 누르면 해제됩니다</string>
+    <string name="notice_alarm_demo">버튼을 누르면 해제됩니다</string>
+    <!-- Introduction -->
+    <string name="intro_co">일산화탄소 감지</string>
+    <string name="intro_temperature">이상온도 감지</string>
+    <string name="intro_smoke">연기감지</string>
+    <string name="intro_share">비상연락으로 신속한 알림</string>
+
+    <!-- Bluetooth Login -->
+    <string name="login_welcome">환영합니다</string>
+    <string name="login_use_title">서비스 약관</string>
+    <string name="login_use_content">\n이 약관은 오픈스택 주식회사 (회사 또는 주식회사) 가 제공하는 오픈스택 관련제반 서비스의 이용과관련하여 회사와 회원간의 권리, 의무 및 기다사항을...</string>
+    <string name="login_privacy_title">개인정보 취급방침</string>
+    <string name="login_privacy_content">\n이 약관은 오픈스택 주식회사 (회사 또는 주식회사) 가 제공하는 오픈스택 관련제반 서비스의 이용과관련하여 회사와 회원간의 권리, 의무 및 기다사항을...</string>
+    <string name="login_location_title">위치기반서비스이용약관</string>
+    <string name="login_location_content">\n이 약관은 오픈스택 주식회사 (회사 또는 주식회사) 가 제공하는 오픈스택 관련제반 서비스의 이용과관련하여 회사와 회원간의 권리, 의무 및 기다사항을...</string>
+    <string name="login_agreement">모든 약관에 동의합니다.</string>
+    <string name="login_facebook">페이스북 로그인</string>
+    <string name="login_instagram">인스타그램 로그인</string>
+    <string name="login_kakaotalk">카카오톡 로그인</string>
+    <string name="login_other">다른 방식으로 로그인</string>
+    <string name="login_other_name">이름</string>
+    <string name="login_other_email">이메일</string>
+    <string name="login_other_password">비밀번호</string>
+    <string name="login_other_reenter">비밀번호 확인</string>
+    <string name="login_other_titlebar">가입하기</string>
+
+    <!-- Bluetooth Connection -->
+    <string name="no_device">찾은 단말기가 없습니다</string>
+    <string name="num_device">단말기</string>
+    <string name="num_devices">단말기</string>
+    <string name="num_found_device">찾은 단말기</string>
+    <string name="num_found_devices">찾은 단말기</string>
+    <string name="bluetooth_scanning">검색 중...</string>
+    <string name="bluetooth_scan">블루투스 검색 중...</string>
+    <string name="bluetooth_scan_sresult">블루투스 검색결과</string>
+    <string name="unknown_device">알 수 없는 단말기</string>
+    <string name="connecting">연결 중...</string>
+    <string name="connecting_2">연결 중</string>
+    <string name="wait">잠시만 기다려주세요...</string>
+    <string name="no_device_notification"> 디바이스를 찾지 못했습니다. 아래의 방법을 시도하세요:\n
+        \n1. 스마트폰과 불디를 더 가까이 위치시키세요.\n
+        \n2. 불디의 전원을 확인해주세요. 전원이 꺼져있으면 켜기 바랍니다.\n
+        \n3. 새건전지를 교환하고 다시 시도해 보기 바랍니다.\n
+    </string>
+    <!-- Sensor view -->
+    <string name="sensor_status_good">쾌적한 상태입니다</string>
+    <string name="sensor_status_bad">나쁜 환경입니다</string>
+    <string name="sensor_status_refresh">신선한 상태입니다</string>
+    <string name="sensor_temperature_status_57up">화재발생이 의심됩니다</string>
+    <string name="sensor_temperature_status_4157">화재발생이 의심됩니다</string>
+    <string name="sensor_temperature_status_3340">무진장 덥습니다</string>
+    <string name="sensor_temperature_status_2732">아주 따뜻합니다</string>
+    <string name="sensor_temperature_status_1826">쾌적한 상태입니다</string>
+    <string name="sensor_temperature_status_1118">약간 서늘합니다</string>
+    <string name="sensor_temperature_status_510">추위가 느껴집니다</string>
+    <string name="sensor_temperature_status_minus">매우 찬 공기가 느껴져요</string>
+    <string name="sensor_status_zeros">쾌적한 상태입니다</string>
+    <string name="sensor_status_suspect">화재발생이 의심됩니다</string>
+    <string name="sensor_start_time">시작 시간</string>
+    <string name="sensor_highest">최고</string>
+    <string name="sensor_lowest">최저</string>
+    <string name="sensor_avarage">평균</string>
+    <string name="smoke_warning">경고</string>
+    <string name="smoke_stable">쾌적</string>
+    <string name="sensor_back_title">Close bulldi application</string>
+    <string name="sensor_back_message">Are you sure that you want to close the bulldi application</string>
+    <!-- Setting -->
+    <string name="setting_title">설정</string>
+    <string name="battery_status_full">불디 전원이 안정적입니다</string>
+    <string name="battery_status_stable">불디 전원이 안정적입니다</string>
+    <string name="battery_status_low">건전지 출력이 부족합니다</string>
+    <string name="battery_status_replace">건전지를 교체해 주세요</string>
+
+    <string name="setting_notify">알림친구</string>
+    <string name="setting_notify_status">등록해주세요</string>
+
+    <string name="setting_message_content">화재 경고음</string>
+    <string name="setting_message_content_status_1">Siren</string>
+    <string name="setting_message_content_status_2">Fire car</string>
+    <string name="setting_message_content_status_3">Emergency 1</string>
+    <string name="setting_message_content_status_4">Emergency 2</string>
+
+    <string name="setting_light">조명</string>
+    <string name="setting_light_status_on">On</string>
+    <string name="setting_light_status_on_5">On/5분</string>
+    <string name="setting_light_status_on_10">On/10분</string>
+    <string name="setting_light_status_on_20">On/20분</string>
+    <string name="setting_light_status_on_30">On/30분</string>
+    <string name="setting_light_status_off">Off</string>
+
+    <string name="setting_custumer_idea">고객센터</string>
+
+    <string name="setting_history">경고이력</string>
+
+    <string name="setting_operation_test">동작 테스트</string>
+    <string name="setting_operation_test_status">정상입니다.</string>
+    <string name="operation_test_fire">화재 데모 테스트</string>
+    <string name="operation_test_alarm">알람 테스트</string>
+    <string name="operation_test_lamp">전등 테스트</string>
+    <string name="operation_test_no_support">배터리가 얼마남지 않아 동작테스트를 할수 없습니다.</string>
+
+    <string name="setting_website">공식 웹사이트</string>
+
+    <!-- Notify friends preference -->
+    <string name="notify_friend_title">알림친구</string>
+    <string name="notify_friend_search">검색</string>
+    <string name="notify_friend_sec1">선택한 연락처</string>
+    <string name="notify_friend_sec2">연락처</string>
+    <!-- Message contents preference -->
+    <string name="message_content_title">화재 경고음</string>
+    <string name="message_content_item_1">Siren</string>
+    <string name="message_content_item_2">Fire car</string>
+    <string name="message_content_item_3">Emergency 1</string>
+    <string name="message_content_item_4">Emergency 2</string>
+    <string name="message_sms">불이야~ 불이야~ 불이야~ 여기에 불이 났습니다. 위험에 처해있으니 도와주세요!!!</string>
+    <!-- Lighting preference -->
+    <string name="lighting_title">조명</string>
+    <string name="lighting_item_1">조명</string>
+    <string name="lighting_item_2">잠자기</string>
+    <string name="lighting_item_2_status1">없음</string>
+    <string name="lighting_item_2_status2">5분</string>
+    <string name="lighting_item_2_status3">10분</string>
+    <string name="lighting_item_2_status4">20분</string>
+    <string name="lighting_item_2_status5">30분</string>
+    <string name="lighting_item_2_guide">끄기</string>
+    <string name="lighting_no_support">건전지가 얼마 남지 않아서 조명을 켤 수가 없습니다</string>
+    <!-- Customer idea preference -->
+    <string name="customer_idea_title">고객센터</string>
+    <string name="customer_idea_spinner_1">선택...</string>
+    <string name="customer_idea_spinner_2">아이디어 제안</string>
+    <string name="customer_idea_spinner_3">일반문의</string>
+    <string name="customer_idea_spinner_4">사용자문의</string>
+    <string name="customer_idea_spinner_5">비즈니스 제안</string>
+    <string name="thank_customer">의견이 잘 접수가 되었습니다.\n
+        \n충분히 검토하도록 하겠습니다.\n
+        \n감사합니다.
+    </string>
+    <string name="customer_idea_warning">내용이 없습니다.</string>
+    <!-- Warning history preference -->
+    <string name="warning_history_title">경고이력</string>
+    <string name="warning_history_install">환영합니다, 만나서 반갑습니다</string>
+    <string name="warning_history_install_value">앱 설치</string>
+    <string name="warning_history_co">일산화탄소 감지</string>
+    <string name="warning_history_temperature">이상온도 감지</string>
+    <string name="warning_history_smoke">연기 감지</string>
+    <string name="warning_history_sleep_mode">잠자기 설정</string>
+    <string name="warning_history_connection">블루투스 연결</string>
+    <string name="warning_history_disconnection">블루투스 끊어짐</string>
+    <string name="waring_history_alert_title">삭제하기</string>
+    <string name="waring_history_alert_message">모든 기록을 삭제할까요?</string>
+    <string name="waring_history_alert_positive">예</string>
+    <string name="waring_history_alert_negative">아니요</string>
+    <!-- ETC preference -->
+    <string name="etc_title">기타</string>
+    <string name="etc_item_1">언어</string>
+    <string name="language_item_1">영어</string>
+    <string name="language_item_2">한국어</string>
+
+    <string name="etc_item_2">단위변환</string>
+    <string name="unit_temperature">온도</string>
+
+    <string name="etc_item_3">법률정보</string>
+    <string name="legal_information_title">법률정보</string>
+    <string name="legal_information_title_item1">서비스 약관</string>
+    <string name="legal_information_title_item2">개인정보 취급방침</string>
+    <string name="legal_information_title_item3">위치기반서비스이용약관</string>
+
+    <string name="etc_item_4">상태</string>
+    <string name="version_title">상태</string>
+    <string name="stauts_deviceInfo">불디 정보</string>
+    <string name="stauts_AppInfo">어플리케이션 정보</string>
+    <string name="version_firmware">펌웨어 버전</string>
+    <string name="status_bulldiMAC">MAC 주소</string>
+    <string name="status_bulldiCompany">제조자 이름</string>
+    <string name="version_software">어플리케이션 버전</string>
+    <string name="status_account">계정정보</string>
+    <string name="status_androidID">ID</string>
+    <string name="version_software_update">앱 최신버젼</string>
+    <string name="version_software_update_require">업그레이드가 필요합니다.</string>
+    <string name="version_software_update_unrequire">현재 최신버전입니다</string>
+    <string name="version_software_update_check">옛 소프트웨어를 제거하고 새 소프트웨어를 설치하세요.</string>
+    <string name="status_firmware">bulldi device firmware version</string>
+    <string name="status_MAC">bulldi device MAC address</string>
+    <string name="status_software">bulldi application version</string>
+    <string name="status_ble_address">Bluetooth address</string>
+
+
+    <string name="etc_item_5">탈퇴</string>
+    <string name="session_out_title">탈퇴</string>
+    <string name="waring_sessionOut_alert_title">탈퇴</string>
+    <string name="waring_sessionOut_alert_message">정말로 bulldi 서비스를 탈퇴하시겠습니까?</string>
+    <string name="waring_sessionOut_alert_positive">예</string>
+    <string name="waring_sessionOut_alert_negative">아니요</string>
+    <string name="session_out_notice">회원탈퇴를 통해 아이디를 해지하시면, 즉시, 회원탈퇴처리가 됩니다.\n
+        \nbulldi는 언제나 열려 있습니다.
+        \n언제든 재가입 하시면 bulldi 서비스를 이용하실수있습니다.\n
+        \n회원탈퇴로 고객님의 개인정보 데이터는 모두 삭제되며 복구가 불가능하게 됩니다. (단, 화재관련 데이터는 화재예방활동 등 공익을 위해 사용될수도 있습니다)</string>
+    <string name="session_out_check">위의 내용을 충분히 숙지하였으며, 탈퇴합니다</string>
+
+    <string name="etc_item_6">마이불디</string>
+    <string name="alias_intro">bulldi에 이름을 지어주세요.\n
+    다음 블루투스 연결부터 찾기가 쉬워집니다.
+    </string>
+    <string name="alias_hint">별칭을 입력하세요</string>
+    <!-- Bulldi rule -->
+    <string name="rule1_title">서비스 약관</string>
+    <string name="rule2_title">개인정보 취급방침</string>
+    <string name="rule3_title">위치기반서비스이용약관</string>
+    <!-- Bulldi status -->
+    <string name="status_disconected">bulldi 연결이 끊어졌습니다.</string>
+    <string name="status_connected_fail">연결 실패. 상태:</string>
+    <string name="status_error_generation">연결 해제 상태:</string>
+    <!-- ETC battery -->
+    <string name="battery_preference">배터리</string>
+    <!-- HCIDefines -->
+    <string name="HCI_01">알려지지 않은 HCI 명령어</string>
+    <string name="HCI_02">알려지지 않는 HConnection  ID</string>
+    <string name="HCI_03">하드웨어 고장</string>
+    <string name="HCI_04">페이지 시간 초과</string>
+    <string name="HCI_05">인증 실패</string>
+    <string name="HCI_06">핀 혹은 키가 없음</string>
+    <string name="HCI_07">메모리 용량 초과</string>
+    <string name="HCI_08">타임아웃</string>
+    <string name="HCI_09">연결 시간이 초과되었습니다.</string>
+    <string name="HCI_0A">하나의 디바이스에 동시 연결수 초과함</string>
+    <string name="HCI_0B">ACL 연결이 이미 존재합니다.</string>
+    <string name="HCI_0C">명령어가 허용이 되지 않습니다.</string>
+    <string name="HCI_0D">자원 부족으로 연결이 거절되었습니다.</string>
+    <string name="HCI_0E">보안상의 이유로 연결이 거절되었습니다.</string>
+    <string name="HCI_0F">받아들일 수 없는 BD-ADDR 로 인해 연결이 거절되었습니다.</string>
+    <string name="HCI_10">연결 수용 시간 타임아웃</string>
+    <string name="HCI_11">지원되지 않는 특성 혹은 변수 겂</string>
+    <string name="HCI_12">유효하지 않는 HCO 명령어 값</string>
+    <string name="HCI_13">원격 사용자의 연결이 끊어짐</string>
+    <string name="HCI_14">자원 부족으로 불디의 연결이 끊어짐</string>
+    <string name="HCI_15">불디의 전원이 인가되지 않아서 연결이 끊어짐</string>
+    <string name="HCI_16">로털 호스트에 의해 연결이 종료됨</string>
+    <string name="HCI_17">반복적인 시도</string>
+    <string name="HCI_18">페어링이 허용되지 않습니다.</string>
+    <string name="HCI_19">알려지지 않은 LMP PDU 입니다.</string>
+    <string name="HCI_1A">지원되지 않는 원격 특성 / 지원되지 않는 LMP 특성</string>
+    <string name="HCI_1B">SCO Offset Rejected</string>
+    <string name="HCI_1C">SCO Interval Rejected</string>
+    <string name="HCI_1D">SCO Air Mode Rejected</string>
+    <string name="HCI_1E">유효하지 않는 LMP 제어값 / 유효하지 않는 LL 제어값</string>
+    <string name="HCI_1F">특정되어지지 않는 에러</string>
+    <string name="HCI_20">지원되지 않는 LMP 제어값 / 지원되지 않는 LL 제어값</string>
+    <string name="HCI_21">역할이 변경되지 않음</string>
+    <string name="HCI_22">LMP 응답시간 타임아웃 / LL 응답시간 타임아웃</string>
+    <string name="HCI_23">LMP Error Transaction Collision</string>
+    <string name="HCI_24">LMP PDU 가 허용되지 않음</string>
+    <string name="HCI_25">암호화 모드 허용되지 않음</string>
+    <string name="HCI_26">링크 키가 변경될 수 없습니다</string>
+    <string name="HCI_27">요청하신 QoS 는 지원되지 않습니다</string>
+    <string name="HCI_28">Instant Passed</string>
+    <string name="HCI_29">unit key 를 사용하는 페어링이 지원되지 않습니다.</string>
+    <string name="HCI_2A">Different Transaction Collision</string>
+    <string name="HCI_2C">지원되지 않는 QoS 변수값</string>
+    <string name="HCI_2D">QoS 거절당함</string>
+    <string name="HCI_2E">채널 평가가 지원되지 않음</string>
+    <string name="HCI_2F">충분하지 않는 보안</string>
+    <string name="HCI_30">매개 변수값이 유효범위 밖입니다.</string>
+    <string name="HCI_32">역할 교체 대기 중</string>
+    <string name="HCI_34">예약된 슬롯 위배</string>
+    <string name="HCI_35">역할 변경 실패</string>
+    <string name="HCI_36">증가된 질문 답변이 너무 큽니다</string>
+    <string name="HCI_37">호스트는 간단한 페어링을 지원하지 않습니다</string>
+    <string name="HCI_38">호스트가 바쁨 - 페어림</string>
+    <string name="HCI_39">적당한 채널이 발견되지 않았기 때문에 연결이 거절되었습니다</string>
+    <string name="HCI_3A">컨트롤러 바쁨</string>
+    <string name="HCI_3B">수용할 수 없는 연결 매개 변수값</string>
+    <string name="HCI_3C">제어된 광고 타임아웃</string>
+    <string name="HCI_3D">MIC 실패로 연결 종료됨</string>
+    <string name="HCI_3E">Connection Failed To Be Established</string>
+    <string name="HCI_3F">MAC 연결 실패함</string>
+    <string name="HCI_40">Coarse Clock Adjustment Rejected But Will Try to Adjust Using Clock Dragging</string>
+</resources>

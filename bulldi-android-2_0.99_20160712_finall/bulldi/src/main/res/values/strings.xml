@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main activity -->
+    <string name="app_name">bulldi</string>
+    <string name="connect">Connect</string>
+    <string name="title_device_list">Device List</string>
+    <string name="device">Device</string>
+    <string name="header">Available BLE Devices</string>
+    <string name="disconnected">Device is not connected</string>
+    <string name="control">Done</string>
+    <string name="bt_not_supported">Bluetooth is not supported</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="bt_on">Bluetooth was turned  on</string>
+    <string name="bt_not_on">Bluetooth was not turned on</string>
+    <string name="app_closing">Exiting bulldi app</string>
+    <string-array name="device_filter"><item>SensorTag</item><item>SensorTag2</item><item>Bulldi</item><item>bulldi</item><item>CC2650 SensorTag</item></string-array>
+    <string name="nodevice">There are no SensorTags advertising within range. Please push the side button on the SensorTag to start advertising.</string>
+    <string name="scan_advice">The Android device is not scanning. Please tap \'Scan\' to scan for SensorTags.</string>
+    <string name="bt_adapter_disable">Disable Bluetooth adapter</string>
+    <string name="bt_adapter_reset">Reset Bluetooth adapter</string>
+    
+    <!-- Options menu -->
+    <string name="prefs">Preferences</string>
+    <string name="progress"></string>
+    <string name="agree">I agree</string>
+    <string name="fwupdate">Firmware update</string>
+    <string name="bt">Bluetooth Adapter</string>
+    <string name="sthome">SensorTag Home</string>
+    <string name="tie2e">TI E2E Community</string>
+    <string name="license">License</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+
+    <!-- Device activity -->
+    <string name="dev_addr">Device address</string>
+    <string name="image">Image</string>
+    
+    <!-- Sensor names-->
+    <string name="keys">Keys</string>
+    <string name="acc">Accelerometer</string>
+    <string name="mag">Magnetometer</string>
+    <string name="lux">Luxometer</string>
+    <string name="gyro">Gyroscope</string>
+    <string name="hum">Humidity</string>
+    <string name="bar">Barometer</string>
+    <string name="tAmb">Ambience Temperature</string>
+    <string name="tObj">Object Temperature</string>
+    
+    <!-- Sensor misc. -->
+    <string name="xyz3">x:\ny:\nz:\n</string>
+    <string name="empty3">*\n*\n*\n</string>
+    <string name="unitDegSec3">deg/s\ndeg/s\ndeg/s\n</string>
+    <string name="unitG3">g\ng\ng\n</string>
+    <string name="unitT3">uT\nuT\nuT\n</string>
+    
+    <string name="empty1">*\n</string>
+    <string name="unitDeg">deg/C\n</string>
+    <string name="unitRH">%rH\n</string>
+    <string name="unitPA_Meter">nPA\nmeter</string>
+    <string name="unitLux">Lux\n</string>
+    <string name="unitTemp">C</string>
+    <string name="unitSymbolTemp">&#xb0;</string>
+
+    <!-- FWUpdate activity -->
+    <string name="title_oad">Firmware Update (OAD)</string>
+    <string name="start_prog">Start Programming</string>
+    <string name="cancel">Cancel</string>
+    <string name="prog_ogoing">NB! Not permitted to close this view during OAD transfer</string>
+    <string name="load_image_a">Image A</string>
+    <string name="load_image_b">Image B</string>
+    <string name="load_image_c">Custom</string>
+    <string name="no_image">Not an OAD image</string>
+    <string name="no_image_sel">No image selected</string>
+    <string name="new_image">Update image:</string>
+    <string name="cur_image">Device image:</string>
+    <string name="idle">idle</string>
+    <string name="btn_txt_confirm">Confirm</string>
+    <string name="discovering_services">Discovering Services</string>
+    <string name="oad_dialog_old_fw_0_89_cc26xx">Firmware version 0.89 detected, to upgrade to latest firmware we will need to upgrade in two stages, first stage to v0.91 and second stage to v1.01</string>
+    <string name="oad_dialog_programming_finished">Firmware upgrade finished, the device should now disconnect, this will be evident by the device restarting and LED start blinking again. \r\n\r\nIf this should not happen, upgrade failed, you should try to upgrade again.</string>
+
+    <!-- Progress alertview -->
+    <string name="progress_title">Discovering Services</string>
+    <string name="progress_info">Discovered x of x services</string>
+    <string name="oad_dialog_title">OAD Programming</string>
+    <string name="oad_dialog_progress">0.0%</string>
+    <string name="oad_file_select_button">Browse</string>
+    <string name="cloud_config_dialog_title">Cloud Configuration</string>
+    <string name="cloud_config_dialog_cloud_service">Cloud service :</string>
+    <string name="cloud_config_dialog_username">Username :</string>
+    <string name="cloud_config_dialog_password">Password :</string>
+    <string name="cloud_config_dialog_device_id">Device id:</string>
+    <string name="cloud_config_dialog_cloud_broker_address">Broker Address :</string>
+    <string name="cloud_config_dialog_broker_port">Broker Port :</string>
+    <string name="cloud_config_dialog_publish_topic">Publish Topic :</string>
+    <string name="cloud_config_dialog_clean_session_checkbox_title">Clean session</string>
+    <string name="cloud_config_dialog_use_ssl_checkbox_title">Use SSL</string>
+    <string name="cloud_config_dialog_save_button_text">Save settings</string>
+
+    <!-- Phone -->
+    <string name="defaultnumber">01065901333</string>
+    <string name="smsinputtext">Fire, come please</string>
+    <string-array name="cloud_config_dialog_cloud_services_array">
+        <item>IBM IoT Quick Start</item>
+        <item>IBM IoT Foundation</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string name="test_start">Test start</string>
+    <!--<string name="facebook_app_id">796032750509054</string>-->
+    <string name="facebook_app_id">956245164411786</string>
+    <string name="kakao_app_key">3a030f3e3dc151f0cb025a20ee30aa16</string>
+    <!--<string name="kakao_app_key">7fd7ac92db42c65d8a68846eb25cd390</string>-->
+    <!--string name="kakao_app_key">f322a8c98ec67043cb925c04d12d85ae</string>-->
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string-array name="usermgmg_gender_types">
+        <item>@string/female</item>
+        <item>@string/male</item>
+    </string-array>
+    <!-- Button -->
+    <string name="button_start">Start</string>
+    <string name="button_stop">Stop</string>
+    <string name="button_scan">Scan</string>
+    <string name="button_rescan">Rescan</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_close">Close</string>
+    <string name="button_out">Out of service</string>
+    <string name="button_signup">Sign me up</string>
+    <string name="button_upgrade">Upgrade</string>
+    <string name="button_update">Update</string>
+    <string name="button_5sec">5 Sec.</string>
+    <string name="button_sessionOut">Session Out</string>
+    <string name="button_setAlias">Change bulldi name</string>
+
+    <!-- Toast -->
+    <string name="toast_contact_notify">Share emergencies will be automatically registered to your friends</string>
+    <string name="toast_no_contact">No Contact Found!!!</string>
+    <string name="toast_sent_email">Sent email</string>
+    <string name="toast_sent_error">Sending error. Please check your network connection!</string>
+    <string name="toast_login_other_fillText">Please fill all the text field</string>
+    <string name="toast_login_other_wrongpass">Please re-enter password</string>
+    <string name="toast_internet_checking">Please check your network connection!</string>
+    <string name="toast_operation_test">Please touch to row for operation test</string>
+    <string name="toast_change_software">New software version is available. Please uninstall the old version and install the new one</string>
+    <!-- Alarm -->
+    <string name="notice_alarm">Press and hold the stop button in 3s to release</string>
+    <string name="notice_alarm_demo">Press the stop button to release</string>
+    <!-- Introduction -->
+    <string name="intro_co">The sensing carbon monoxide gas according to various situations</string>
+    <string name="intro_temperature">Measure the temperature change well</string>
+    <string name="intro_smoke">Shows detect smoke</string>
+    <string name="intro_share">Inform your emergency to your friends</string>
+
+    <!-- Bluetooth Login -->
+    <string name="login_welcome">Welcome to bulldi</string>
+    <string name="login_use_title">Terms of Service</string>
+    <string name="login_use_content">\nThese terms of service cover your activities on bulldi.com, our platform that enables people to create the change they want to see, and Change Politics, our platform that empowers voters to make informed election decisions (“platforms”). These platforms allow people to start and promote “campaigns”, which include petitions and fundraisers on bulldi.com, candidate questions and endorsements on Change Politics and related actions like creating and sharing content via our platforms and third-party sites and services.</string>
+    <string name="login_privacy_title">Privacy Policy</string>
+    <string name="login_privacy_content">\nAt bulldi, we respect the privacy of our clients. We do use information you provide to better serve your insurance needs. We also recognize that this information belongs to you and that we must treat it accordingly. The following statement spells out our privacy policy in more detail.</string>
+    <string name="login_location_title">Operation Policy</string>
+    <string name="login_location_content">\nYou acknowledge that you have read and accepted the terms of the Agreement. You agree to comply with all applicable laws, regulations and/or rules with regard to your use of bulldi, any updates to bulldi that bulldi may deliver to your mobile device (bulldi Updates), and any other services that bulldi performs for you under the Agreement (Services).</string>
+    <string name="login_agreement">Your agree all our terms of use, privacy policy and cookie policy</string>
+    <string name="login_facebook">Login facebook</string>
+    <string name="login_instagram">Login instagram</string>
+    <string name="login_kakaotalk">Login kakaotalk</string>
+    <string name="login_other">Login with other</string>
+    <string name="login_other_name">Name</string>
+    <string name="login_other_email">Email</string>
+    <string name="login_other_password">Password</string>
+    <string name="login_other_reenter">Re-enter password</string>
+    <string name="login_other_titlebar">Sign up</string>
+
+    <!-- Bluetooth Connection -->
+    <string name="no_device">0 found device</string>
+    <string name="num_device">device</string>
+    <string name="num_devices">devices</string>
+    <string name="num_found_device">found device</string>
+    <string name="num_found_devices">found devices</string>
+    <string name="bluetooth_scanning">Scanning...</string>
+    <string name="bluetooth_scan">Bluetooth Scanning...</string>
+    <string name="bluetooth_scan_sresult">Scanning Result</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="connecting">Connecting...</string>
+    <string name="connecting_2">Connecting</string>
+    <string name="wait">Please wait...</string>
+    <string name="no_device_notification">No device is detected. Please try the bellowing solutions:\n
+        \n1. Put the phone and device more closer.\n
+        \n2. Check the power button on device, if it is turned off, please turn it on.\n
+        \n3. Change the battery and retry.\n
+    </string>
+
+    <!-- Sensor view -->
+    <string name="sensor_status_good">good physical health</string>
+    <string name="sensor_status_bad">bad condition</string>
+    <string name="sensor_status_refresh">normal</string>
+    <string name="sensor_temperature_status_57up">Watch out! fire suspected</string>
+    <string name="sensor_temperature_status_4157">Watch out! fire suspected</string>
+    <string name="sensor_temperature_status_3340">hot</string>
+    <string name="sensor_temperature_status_2732">warm</string>
+    <string name="sensor_temperature_status_1826">nice</string>
+    <string name="sensor_temperature_status_1118">cool</string>
+    <string name="sensor_temperature_status_510">cold</string>
+    <string name="sensor_temperature_status_minus">very cold</string>
+    <string name="sensor_status_zeros">normal</string>
+    <string name="sensor_status_suspect">Watch out! fire suspected</string>
+    <string name="sensor_start_time">Begin Date</string>
+    <string name="sensor_highest">Highest</string>
+    <string name="sensor_lowest">Lowest</string>
+    <string name="sensor_avarage">Average</string>
+    <string name="smoke_warning">Warning</string>
+    <string name="smoke_stable">Stable</string>
+    <string name="sensor_back_title">Close bulldi application</string>
+    <string name="sensor_back_message">Are you sure to close the bulldi application</string>
+    <!-- Setting -->
+    <string name="setting_title">Settings</string>
+    <string name="battery_status_full">It is full battery</string>
+    <string name="battery_status_stable">bulldi power is stable</string>
+    <string name="battery_status_low">The battery is a little wonky</string>
+    <string name="battery_status_replace">Please replace the battery</string>
+
+    <string name="setting_notify">Notify My Friends</string>
+    <string name="setting_notify_status">Please register</string>
+
+    <string name="setting_message_content">Alarm Sound</string>
+    <string name="setting_message_content_status_1">Siren</string>
+    <string name="setting_message_content_status_2">Fire car</string>
+    <string name="setting_message_content_status_3">Emergency 1</string>
+    <string name="setting_message_content_status_4">Emergency 2</string>
+
+    <string name="setting_light">Lighting</string>
+    <string name="setting_light_status_on">On</string>
+    <string name="setting_light_status_on_5">On/5m</string>
+    <string name="setting_light_status_on_10">On/10m</string>
+    <string name="setting_light_status_on_20">On/20m</string>
+    <string name="setting_light_status_on_30">On/30m</string>
+    <string name="setting_light_status_off">Off</string>
+
+    <string name="setting_custumer_idea">Customer Suggestions</string>
+
+    <string name="setting_history">Warning History</string>
+
+    <string name="setting_operation_test">Operation Test</string>
+    <string name="setting_operation_test_status">It is normal.</string>
+    <string name="operation_test_fire">Fire Demo Test</string>
+    <string name="operation_test_alarm">Alarm Test</string>
+    <string name="operation_test_lamp">Lamp Test</string>
+    <string name="operation_test_no_support">Low battery\n Operation test is not allowed.</string>
+
+    <string name="setting_website">bulldi Homepage</string>
+
+    <!-- Notify friends preference -->
+    <string name="notify_friend_title">Notify My Friends</string>
+    <string name="notify_friend_search">Search friend</string>
+    <string name="notify_friend_sec1">Selected contacts</string>
+    <string name="notify_friend_sec2">Contacts</string>
+    <!-- Message contents preference -->
+    <string name="message_content_title">Alarm Sound</string>
+    <string name="message_content_item_1">Siren</string>
+    <string name="message_content_item_2">Fire car</string>
+    <string name="message_content_item_3">Emergency 1</string>
+    <string name="message_content_item_4">Emergency 2</string>
+    <string name="message_sms">There is a fire around here and I am in danger. Please come to me!!!</string>
+    <!-- Lighting preference -->
+    <string name="lighting_title">Lighting</string>
+    <string name="lighting_item_1">Lamp</string>
+    <string name="lighting_item_2">Sleeping</string>
+    <string name="lighting_item_2_status1">None</string>
+    <string name="lighting_item_2_status2">5m</string>
+    <string name="lighting_item_2_status3">10m</string>
+    <string name="lighting_item_2_status4">20m</string>
+    <string name="lighting_item_2_status5">30m</string>
+    <string name="lighting_item_2_guide">shut down</string>
+    <string name="lighting_no_support">Low battery\n Turning on the lamp is not allowed</string>
+    <!-- Customer idea preference -->
+    <string name="customer_idea_title">Customer Suggestions</string>
+    <string name="customer_idea_spinner_1">Select...</string>
+    <string name="customer_idea_spinner_2">Idea suggestions</string>
+    <string name="customer_idea_spinner_3">General inquiry</string>
+    <string name="customer_idea_spinner_4">User inquiry</string>
+    <string name="customer_idea_spinner_5">Business proposal</string>
+    <string name="thank_customer">Dear Customer,\nThank you for your suggestion. Your comment is so precious to us.\n
+        \nBest regards.
+    </string>
+    <string name="customer_idea_warning">Text is empty</string>
+    <!-- Warning history preference -->
+    <string name="warning_history_title">Warning History</string>
+    <string name="warning_history_install">Hi, nice to meet you</string>
+    <string name="warning_history_install_value">installation</string>
+    <string name="warning_history_co">Carbon monoxide Emergency</string>
+    <string name="warning_history_temperature">Temperature Emergency</string>
+    <string name="warning_history_smoke">Smoke Emergency</string>
+    <string name="warning_history_sleep_mode">Sleeping mode</string>
+    <string name="warning_history_connection">Connected</string>
+    <string name="warning_history_disconnection">Disconnected</string>
+    <string name="waring_history_alert_title">Delete all histories</string>
+    <string name="waring_history_alert_message">Are you sure to delete all histories?</string>
+    <string name="waring_history_alert_positive">Yes</string>
+    <string name="waring_history_alert_negative">No</string>
+    <!-- ETC preference -->
+    <string name="etc_title">ETC</string>
+    <string name="etc_item_1">Language</string>
+    <string name="language_item_1">English</string>
+    <string name="language_item_2">Korean</string>
+
+    <string name="etc_item_2">Temperature Unit</string>
+    <string name="unit_temperature">Temperature</string>
+
+    <string name="etc_item_3">Legal information</string>
+    <string name="legal_information_title">Legal information</string>
+    <string name="legal_information_title_item1">Terms of Service</string>
+    <string name="legal_information_title_item2">Privacy Policy</string>
+    <string name="legal_information_title_item3">Operation Policy</string>
+
+
+    <string name="etc_item_4">Status</string>
+    <string name="version_title">Status</string>
+    <string name="stauts_deviceInfo">Device Information</string>
+    <string name="stauts_AppInfo">Application Information</string>
+    <string name="version_firmware">Firmware version</string>
+    <string name="status_bulldiMAC">MAC Address</string>
+    <string name="status_bulldiCompany">Manufacture Name</string>
+    <string name="version_software">Application version</string>
+    <string name="status_account">Account Information</string>
+    <string name="status_androidID">Instance ID</string>
+    <string name="version_software_update">Application latest version</string>
+    <string name="version_software_update_require">The upgrade is required.</string>
+    <string name="version_software_update_unrequire">This is the latest version.</string>
+    <string name="version_software_update_check">Please uninstall the old version and install the new one</string>
+    <string name="status_firmware">bulldi device firmware version</string>
+    <string name="status_MAC">bulldi device MAC address</string>
+    <string name="status_software">bulldi application version</string>
+    <string name="status_ble_address">Bluetooth address</string>
+
+    <string name="etc_item_5">Session Out</string>
+    <string name="session_out_title">Session Out</string>
+    <string name="waring_sessionOut_alert_title">Session Out</string>
+    <string name="waring_sessionOut_alert_message">Are you sure that you want to out of service?</string>
+    <string name="waring_sessionOut_alert_positive">Yes</string>
+    <string name="waring_sessionOut_alert_negative">No</string>
+    <string name="session_out_notice">If you terminate your account, we will immediately withdraw treatment. Your personal information will be delete and will not be recovered.\n
+        \nHowever, bulldi is always opened.
+        \nIf you want, you can rejoin at any time to use bulldi service.\n
+        \nOtherwise, fire-related data maybe used for public probe.
+    </string>
+    <string name="session_out_check">I have read and understood all the terms above, I agree with session out.</string>
+
+    <string name="etc_item_6">My bulldi</string>
+    <string name="alias_intro">Please give a name for bulldi.\nBluetooth connectivity will be easier on the next time.
+    </string>
+    <string name="alias_hint">Input name</string>
+    <!-- Bulldi rule -->
+    <string name="rule1_title">Terms of Service</string>
+    <string name="rule2_title">Privacy Policy</string>
+    <string name="rule3_title">Operation Policy</string>
+    <!-- Bulldi status -->
+    <string name="status_disconected">bulldi disconnected</string>
+    <string name="status_connected_fail">Connected failed. Status:</string>
+    <string name="status_error_generation">Disconnect status:</string>
+    <!-- ETC battery -->
+    <string name="battery_preference">Battery</string>
+    <!-- HCIDefines -->
+    <string name="HCI_01">Unknown HCI Command</string>
+    <string name="HCI_02">Unknown Connection Identifier</string>
+    <string name="HCI_03">Hardware Failure</string>
+    <string name="HCI_04">Page Timeout</string>
+    <string name="HCI_05">Authentication Failure</string>
+    <string name="HCI_06">Pin or Key Missing</string>
+    <string name="HCI_07">Memory Capacity Exceeded</string>
+    <string name="HCI_08">Connection Timeout</string>
+    <string name="HCI_09">Connection Limit Exceeded</string>
+    <string name="HCI_0A">Synchronous Connection Limit To A Device Exceeded</string>
+    <string name="HCI_0B">ACL Connection Already Exists</string>
+    <string name="HCI_0C">Command Disallowed</string>
+    <string name="HCI_0D">Connected Rejected Due To Limited Resources</string>
+    <string name="HCI_0E">Connection Rejected Due To Security Reasons</string>
+    <string name="HCI_0F">Connection Rejected Due To Unacceptable BD_ADDR</string>
+    <string name="HCI_10">Connection Accept Timeout Exceeded</string>
+    <string name="HCI_11">Unsupported Feature Or Parameter Value</string>
+    <string name="HCI_12">Invalid HCI Command Parameters</string>
+    <string name="HCI_13">Remote User Terminated Connection</string>
+    <string name="HCI_14">Remote Device Terminated Connection Due To Low Resources</string>
+    <string name="HCI_15">Remote Device Terminated Connection Due To Power Off</string>
+    <string name="HCI_16">Connection Terminated By Local Host</string>
+    <string name="HCI_17">Repeated Attempts</string>
+    <string name="HCI_18">Pairing Not Allowed</string>
+    <string name="HCI_19">Unknown LMP PDU</string>
+    <string name="HCI_1A">Unsupported Remote Feature / Unsupported LMP Feature</string>
+    <string name="HCI_1B">SCO Offset Rejected</string>
+    <string name="HCI_1C">SCO Interval Rejected</string>
+    <string name="HCI_1D">SCO Air Mode Rejected</string>
+    <string name="HCI_1E">Invalid LMP Parameters / Invalid LL Parameters</string>
+    <string name="HCI_1F">Unspecified Error</string>
+    <string name="HCI_20">Unsupported LMP Parameter Value / Unsupported LL Parameter Value</string>
+    <string name="HCI_21">Role Change Not Allowed</string>
+    <string name="HCI_22">LMP Response Timeout / LL Response Timeout</string>
+    <string name="HCI_23">LMP Error Transaction Collision</string>
+    <string name="HCI_24">LMP PDU Not Allowed</string>
+    <string name="HCI_25">Encryption Mode Not Acceptable</string>
+    <string name="HCI_26">Link Key Cannot Be Changed</string>
+    <string name="HCI_27">Requested QoS Not Supported</string>
+    <string name="HCI_28">Instant Passed</string>
+    <string name="HCI_29">Pairing With Unit Key Not Supported</string>
+    <string name="HCI_2A">Different Transaction Collision</string>
+    <string name="HCI_2C">QoS Unacceptable Parameter</string>
+    <string name="HCI_2D">QoS Rejected</string>
+    <string name="HCI_2E">Channel Assessment Not Supported</string>
+    <string name="HCI_2F">Insufficient Security</string>
+    <string name="HCI_30">Parameter Out of Mandatory Range</string>
+    <string name="HCI_32">Role Switch Pending</string>
+    <string name="HCI_34">Reserved Slot Violation</string>
+    <string name="HCI_35">Role Switch Failed</string>
+    <string name="HCI_36">Extended Inquiry Response Too Large</string>
+    <string name="HCI_37">Simple Pairing Not Supported By Host</string>
+    <string name="HCI_38">Host Busy-Pairing</string>
+    <string name="HCI_39">Connection Rejected Due To No Suitable Channel Found</string>
+    <string name="HCI_3A">Controller Busy</string>
+    <string name="HCI_3B">Unacceptable Connection Parameters</string>
+    <string name="HCI_3C">Directed Advertising Timeout</string>
+    <string name="HCI_3D">Connection Terminated Due To MIC Failure</string>
+    <string name="HCI_3E">Connection Failed To Be Established</string>
+    <string name="HCI_3F">MAC Connection Failed</string>
+    <string name="HCI_40">Coarse Clock Adjustment Rejected But Will Try to Adjust Using Clock Dragging</string>
+
+</resources>

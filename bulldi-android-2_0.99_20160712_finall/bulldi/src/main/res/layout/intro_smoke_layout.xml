@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/guide_smoke">
+    <openstack.util.TextViewPlus
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_smoke"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:textAlignment="center"
+        foo:customFont="Roboto-Regular.ttf"
+        android:layout_gravity="center"
+        android:layout_marginTop="340dp"
+        android:paddingBottom="50dp"/>
+    <ImageView
+        android:layout_width="51.5dp"
+        android:layout_height="14dp"
+        android:src="@drawable/slide_03"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/smoke_intro_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/button_off1"
+            android:text="@string/button_start"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+
+</LinearLayout>
